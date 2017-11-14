@@ -1,7 +1,9 @@
-package com.example.xn069392.safehome;
+package com.example.xn069392.safehome.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.xn069392.safehome.R;
 
 public class MainActivity extends AppCompatActivity {
 
