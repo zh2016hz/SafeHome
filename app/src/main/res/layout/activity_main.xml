@@ -1,19 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
     tools:context="com.example.xn069392.safehome.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="#3300ff00"
+        tools:layout_editor_absoluteY="0dp">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/home_head_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/heima"/>
+
+        <com.example.xn069392.safehome.activity.view.MarqueeText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/home_head_image"
+            android:singleLine="true"
+            android:text="武松打虎登记卡收到卡萨几点回家卡萨丁哈萨克大家撒谎的撒"/>
+        <ImageView
+            android:id="@+id/home_head_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:background="@drawable/setting_background"
+            android:src="@mipmap/setting"/>
+    </RelativeLayout>
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Asas "/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/bt"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="12222"/>-->
+    <GridView
+        android:id="@+id/gradView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="2dp"
+        />
+
+</LinearLayout>

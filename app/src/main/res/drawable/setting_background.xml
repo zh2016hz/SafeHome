@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--正常的要放在下面，特殊的放在上面。因为安卓的读取文件机制是之上而下，上面的正常包含了下面的，就不会去改变状态-->
+    <item android:drawable="@drawable/setting_background_select" android:state_pressed="true"/>
+    <item android:drawable="@drawable/setting_background_normal"/>
+</selector>
