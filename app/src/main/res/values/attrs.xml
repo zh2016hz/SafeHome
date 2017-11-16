@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="settingView">
+        <attr name="setting_background">
+            <enum name="top" value="0"/>
+            <enum name="middle" value="1"/>
+            <enum name="button" value="2"/>
+        </attr>
+        <attr name="setting_title" format="string"/>
+        <attr name="setting_showSwitch" format="boolean"/>
+    </declare-styleable>
+</resources>
