@@ -8,4 +8,74 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TitleBarStyleTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">#447755</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!--文字基本-->
+    <!--   android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"-->
+    <style name="TextStyleBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <!--大文字-->
+    <style name="TextStyleBig" parent="TextStyleBase">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--小文字-->
+    <!--    android:drawablePadding="10dp"
+        android:gravity="center_vertical"-->
+    <style name="TextStyleSmall" parent="TextStyleBase">
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">10sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@drawable/dialog_title_default_icon</item>
+
+    </style>
+
+    <style name="BaseButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/alert_button_background_cancel</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ProButton" parent="BaseButton">
+        <item name="android:drawableLeft">@mipmap/pre</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="NextButtom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/alert_button_background_cancel</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableRight">@mipmap/next</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="StyleDot">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@drawable/dot_drawable</item>
+    </style>
+
+    <style name="StyleDotCurrent">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@drawable/dot_drawable_current</item>
+    </style>
 </resources>

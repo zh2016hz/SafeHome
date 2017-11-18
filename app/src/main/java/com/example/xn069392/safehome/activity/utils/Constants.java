@@ -9,4 +9,9 @@ package com.example.xn069392.safehome.activity.utils;
 public interface Constants {
     String AUTOUPDATE ="auto_update";
     String AUTOUOPEN ="auto_open";
+    String PASSWORD ="pass_word";
+    String PASSWORDKEY ="pass_word_key";
+    String SIMINFO ="sim_info";
+    String STORENUMBER ="store_number";
+    String CHECKSTATE ="check_state";
 }

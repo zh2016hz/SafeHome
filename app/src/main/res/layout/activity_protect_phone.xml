@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xn069392.safehome.activity.ProtectPhoneActivity1">
+
+    <TextView
+        style="@style/TitleBarStyleTop"
+        android:text="1/欢迎使用手机防盗"/>
+
+    <TextView
+        style="@style/TextStyleBig"
+
+        android:text="你的手机防盗卫士"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="SIM卡变更报警"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:text="GPS 追踪"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:text="远程锁屏"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:text="远程销毁数据"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/step_1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pro_button"
+            style="@style/ProButton"
+            android:text="上一步"/>
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/NextButtom"
+            android:text="下一步"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/StyleDotCurrent"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

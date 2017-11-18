@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xn069392.safehome.activity.ProtectPhoneActivity1">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TitleBarStyleTop"
+        android:gravity="center"
+        android:text="手机防盗"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/TextStyleBig"
+            android:text="安全号码"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="-----"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/TextStyleBig"
+            android:text="安全号码"/>
+
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/list_button_lock_default"
+        "/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#565555"
+        android:padding="10dp"
+        android:text="功能简介"
+        android:textColor="#fff"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="SIM卡变更报警"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:text="GPS 追踪"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:text="远程锁屏"/>
+
+    <TextView
+        style="@style/TextStyleSmall"
+        android:text="远程销毁数据"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/step_1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pro_button"
+            style="@style/ProButton"
+            android:text="上一步"/>
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/NextButtom"
+            android:text="下一步"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/StyleDotCurrent"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+            <View
+                style="@style/StyleDot"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

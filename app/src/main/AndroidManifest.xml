@@ -3,6 +3,7 @@
           package="com.example.xn069392.safehome">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -21,6 +22,30 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.SettingActivity">
+        </activity>
+        <activity
+            android:name=".activity.ProtectPhoneActivity1"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".activity.ProtectPhoneActivity2"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".activity.ProtectPhoneActivity3"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".activity.ProtectPhoneActivity4"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".activity.ProtectPhoneActivity5"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".activity.ContactPeopleActivity">
+        </activity>
+        <activity android:name=".activity.PhoneSafeActivity">
         </activity>
     </application>
 
